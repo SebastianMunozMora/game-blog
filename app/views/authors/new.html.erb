@@ -1,21 +1,6 @@
 <h1>New author</h1>
 
-<%= form_with model: @author do |form| %>
-
-  <%= @author.attributes()  %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-
-  <%= form.label :contact %>
-  <%= form.text_field :contact %>
-
-  <%= form.label :description %>
-  <%= form.text_field :description %>
-
-  <%= form.file_field :avatar %>
-  <%= form.submit %>
-<% end %>
-<br>
+<%= render "form", author: @author %>
 
 <div>
   <%= link_to "Back to authors", authors_path %>
