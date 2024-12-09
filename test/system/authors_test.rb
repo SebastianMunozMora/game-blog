@@ -16,7 +16,6 @@ class AuthorsTest < ApplicationSystemTestCase
 
     fill_in "Contact", with: @author.contact
     fill_in "Description", with: @author.description
-    fill_in "Image", with: @author.image
     fill_in "Name", with: @author.name
     click_on "Create Author"
 
@@ -30,7 +29,6 @@ class AuthorsTest < ApplicationSystemTestCase
 
     fill_in "Contact", with: @author.contact
     fill_in "Description", with: @author.description
-    fill_in "Image", with: @author.image
     fill_in "Name", with: @author.name
     click_on "Update Author"
 

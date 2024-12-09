@@ -12,7 +12,7 @@ class AuthorsController < ApplicationController
 
   # GET /authors/new
   def new
-    @author = Author.newe
+    @author = Author.new
   end
 
   # GET /authors/1/edit
@@ -25,7 +25,7 @@ class AuthorsController < ApplicationController
 
     respond_to do |format|
       if @author.save
-        format.html { redirect_to @author, notice: "Author was successfully created." }
+        format.html { redirect_to @author, notice: "#{@author.name} was successfully created." }
         format.json { render :show, status: :created, location: @author }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class AuthorsController < ApplicationController
   def update
     respond_to do |format|
       if @author.update(author_params)
-        format.html { redirect_to @author, notice: "Author was successfully updated." }
+        format.html { redirect_to @author, notice:  "#{@author.name} was successfully updated." }
         format.json { render :show, status: :ok, location: @author }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -65,6 +65,6 @@ class AuthorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def author_params
-      params.require(:author).permit(:name, :contact, :image, :description)
+      params.require(:author).permit(:name, :contact, :description, :avatar)
     end
 end

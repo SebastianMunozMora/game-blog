@@ -3,7 +3,6 @@ class CreateAuthors < ActiveRecord::Migration[7.0]
     create_table :authors do |t|
       t.string :name
       t.string :contact
-      t.string :image
       t.text :description
 
       t.timestamps

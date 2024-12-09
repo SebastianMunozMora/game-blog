@@ -1,10 +1,20 @@
-<h1>Editing author</h1>
+<h1>Edit <%= @author.name %></h1>
 
-<%= render "form", author: @author %>
+<%= form_with model: @author do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
 
+  <%= form.label :contact %>
+  <%= form.text_field :contact %>
+
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+
+  <%= form.file_field :avatar %>
+  <%= form.submit %>
+<% end %>
 <br>
 
 <div>
-  <%= link_to "Show this author", @author %> |
   <%= link_to "Back to authors", authors_path %>
 </div>

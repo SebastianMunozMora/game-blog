@@ -3,11 +3,9 @@
 one:
   name: MyString
   contact: MyString
-  image: MyString
   description: MyText
 
 two:
   name: MyString
   contact: MyString
-  image: MyString
   description: MyText
