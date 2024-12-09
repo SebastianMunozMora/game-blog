@@ -5,12 +5,12 @@
   </p>
 
   <p>
-    <strong>Contact:</strong>
-    <%= author.contact %>
+    <%= image_tag(author.avatar, :style=>"width:150px; height: 150px") if author.avatar  %>
   </p>
 
   <p>
-    <%= image_tag(author.avatar, :class=>"rounded-full w-15px h-15px") if author.avatar  %>
+    <strong>Contact:</strong>
+    <%= author.contact %>
   </p>
 
   <p>

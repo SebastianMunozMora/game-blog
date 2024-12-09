@@ -1,5 +1,10 @@
 <div id="<%= dom_id article %>">
   <p>
+    <strong>Image:</strong>
+    <%= image_tag article.image if article.image%>
+  </p>
+
+  <p>
     <strong>Title:</strong>
     <%= article.title %>
   </p>
@@ -9,4 +14,9 @@
     <%= article.body %>
   </p>
 
+  <p>
+    <strong>Author:</strong>
+    <%= article.author.name %>
+    <%= image_tag(article.author.avatar, :class => "author") %>
+  </p>
 </div>
