@@ -1,0 +1,11 @@
+.author {
+    width: 150px;
+    height: 150px;
+}
+
+.top-image {
+    display: block;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
