@@ -18,4 +18,19 @@
     <%= author.description %>
   </p>
 
+  <p style="color: green"><%= notice %></p>
+
+  <h2><%= author.name %>'s Articles</h2>
+
+  <div id="articles">
+    <% Article.by_author_id(author.id).each do |article| %>
+      <%= render article %>
+      <p>
+        <%= link_to "Show this article", article %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New article", new_article_path %>
+
 </div>
