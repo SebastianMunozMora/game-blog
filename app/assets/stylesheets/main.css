@@ -1,7 +1,7 @@
 .author-box {
     font-weight: bold;
-    border: 1px solid grey;
     padding: 5px;
+    border-top: 2px solid lightgray;
 }
 
 .image-box {
@@ -27,7 +27,10 @@
 }
 
 .top-banner {
+    width: 100%;;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #333; 
+    justify-items: center;
+    text-decoration-line: underline;
 }
