@@ -4,20 +4,15 @@
     <h5   class="caption">  the latest fantasy book</h5>
   </div>
 
-  <p>
-    <%= article.title %>
-  </p>
-
-  <p style='width: 500px;'>
-    <%= article.body %>
-  </p>
+  <div class="article-heading">
+    <%= link_to "#{article.title}", article %>
+  </div>
 
   <div class="author-box">
-    <div>
-      <%= image_tag(article.author.avatar, :class => "author") %>
-    </div>
-    <h3>
-      <%= article.author.name%>
-    </h3>
+    <%= article.author.name%>
+  </div>
+
+  <div style='width: 500px;' class="article-body">
+    <%= article.body %>
   </div>
 </div>
