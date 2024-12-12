@@ -28,7 +28,7 @@
 
   <%= form.label "#{:image}:", style: "display: block" %>
   <br>
-  <%= form.file_field :avatar %>
+  <%= form.file_field :avatar, accept: "image/* " %>
 
   <p>
     <%= form.submit %>

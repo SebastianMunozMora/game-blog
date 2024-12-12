@@ -10,7 +10,7 @@
   <%= form.label :description %>
   <%= form.text_field :description %>
 
-  <%= form.file_field :avatar %>
+  <%= form.file_field :avatar, accept: "image/*" %>
   <%= form.submit %>
 <% end %>
 <br>
