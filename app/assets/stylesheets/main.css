@@ -1,3 +1,19 @@
+.author-box {
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.image-box {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.caption {
+    justify-self: center;
+    color: lightgray;
+}
+
 .author {
     width: 150px;
     height: 150px;
@@ -8,4 +24,10 @@
     object-fit: cover;
     width: 500px;
     height: 300px;
+}
+
+.top-banner {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333; 
 }

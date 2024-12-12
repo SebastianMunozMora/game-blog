@@ -1,22 +1,23 @@
 <div id="<%= dom_id article %>">
-  <p>
-    <strong>Image:</strong>
+  <div class="image-box">
     <%= image_tag(article.image, :class => "top-image") %>
-  </p>
+    <h5   class="caption">  the latest fantasy book</h5>
+  </div>
 
   <p>
-    <strong>Title:</strong>
     <%= article.title %>
   </p>
 
   <p style='width: 500px;'>
-    <strong>Body:</strong>
     <%= article.body %>
   </p>
 
-  <p>
-    <strong>Author:</strong>
-    <%= article.author.name %>
-    <%= image_tag(article.author.avatar, :class => "author") %>
-  </p>
+  <div class="author-box">
+    <div>
+      <%= image_tag(article.author.avatar, :class => "author") %>
+    </div>
+    <h3>
+      <%= article.author.name%>
+    </h3>
+  </div>
 </div>
