@@ -7,6 +7,7 @@
 .image-box {
     border: 1px solid grey;
     padding: 5px;
+    background-color: white
 }
 
 .caption {
@@ -33,4 +34,15 @@
     color: #333; 
     justify-items: center;
     text-decoration-line: underline;
+}
+
+.page {
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+}
+
+[id*="article_"] {
+    background-color: rgb(241, 233, 210);
+    padding: 5px;
 }
