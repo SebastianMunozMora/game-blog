@@ -5,8 +5,7 @@
 .author-box {
     font-weight: bold;
     padding: 15px;
-    border-top: 2px solid lightgray;
-    justify-self: left;
+    justify-self: right;
 }
 
 .image-box {
@@ -62,6 +61,13 @@
     width: 525px;
     justify-items: center;
     margin: 15px;
+}
+
+#articles {
+    display: inline-flex;
+    overflow-y: scroll;
+    width: 700px;
+    background-color: white;
 }
 
 .article-heading {
