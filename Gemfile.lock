@@ -90,6 +90,8 @@ GEM
       reline (>= 0.3.8)
     erubi (1.13.0)
     ffi (1.17.0-x86_64-darwin)
+    font-awesome-rails (4.7.0.9)
+      railties (>= 3.2, < 9.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -232,6 +234,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  font-awesome-rails (~> 4.7)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
