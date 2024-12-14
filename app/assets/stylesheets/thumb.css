@@ -2,17 +2,18 @@
     vertical-align: top;
     justify-items: left;
     display: inline-flex;
+    border-radius: 5px;
 
     .image-box {
         flex-basis: fit-content;
         img {
-            width: 150px;
-            height: 150px;
+            max-width: 150px;
+            max-height: 150px;
         }
     }
 
     .article-heading {
-        font-size: 18px;
+        font-size: 1rem;
         width: 100%;
     }
 

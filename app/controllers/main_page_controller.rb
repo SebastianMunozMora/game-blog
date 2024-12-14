@@ -8,5 +8,4 @@ class MainPageController < ApplicationController
     }
     @authors = Author.all
   end
-
 end

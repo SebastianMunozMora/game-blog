@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'test/index'
+  get 'test/thumb'
+  get 'test/full'
   get 'main_page/index'
   resources :articles
   resources :authors

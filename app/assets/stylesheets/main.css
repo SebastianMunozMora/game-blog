@@ -10,8 +10,7 @@ a {
 
 .left {
     max-height: 500px;
-    width: 30%;
-    overflow-y: scroll;
+    width: 500px;
     margin: 15px;
     display: inline-block;
     border-right: solid 2px black;

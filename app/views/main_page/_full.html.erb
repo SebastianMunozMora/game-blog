@@ -1,0 +1,18 @@
+<div id="<%= dom_id article %>" class="full">
+    <div class="image-box">
+        <%= image_tag(article.image, :class => "top-image") %>
+        <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
+    </div>
+
+    <div class="article-heading">
+        <%= link_to "#{article.title}", article %>
+    </div>
+    <div class="author-box">
+        <i class="fa-house"></i>
+        <%= link_to "#{article.author.name}", article.author %>
+    </div>
+
+    <div class="article-body">
+        <%= article.body %>
+    </div>
+</div>

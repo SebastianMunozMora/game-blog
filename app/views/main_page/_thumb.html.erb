@@ -1,4 +1,4 @@
-<div id="<%= dom_id article %>" class="thumb">
+<article id="<%= dom_id article %>" class="thumb">
   <div class="image-box">
     <%= image_tag(article.image, :class => "top-image") %>
   </div>
@@ -9,7 +9,7 @@
     </div>
 
     <div class="author-box">
-        <%= link_to "#{article.author.name}", article.author %>
+        <i class="fab fa-facebook"></i><%= link_to "#{article.author.name}", article.author %>
     </div>
   </div>
-</div>
+</article>

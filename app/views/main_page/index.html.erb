@@ -1,6 +1,5 @@
 
 <div style="justify-items: center;" class="page">
-
   <section class="top-banner">
 
     <h1>The Tech Chronicle</h1>
@@ -11,20 +10,16 @@
 
   <div class="page-articles">
 
-    <div class="left">
-      <div class="articles">
-        <% @articles.each do |article| %>
-          <%= render partial: "thumb", locals: { article: article } %>
-        <% end %>
-      </div>
+    <div class="vertical">
+      <% @articles.each do |article| %>
+        <%= render partial: "thumb", locals: { article: article } %>
+      <% end %>
     </div>
 
-    <div class="main">
-      <div class="articles">
-        <% @articles.each do |article| %>
-          <%= render article  %>
-        <% end %>
-      </div>
+    <div class="">
+      <% @articles.each do |article| %>
+        <%= render partial: "full", locals: { article: article } %>
+      <% end %>
     </div>
 
   </div>
