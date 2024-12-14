@@ -8,6 +8,13 @@
           <%= link_to "#{key}", value %>
         <% end %>
   </div>
+  <section class="left">
+    <div id="articles">
+    <% @articles.each do |thumb| %>
+      <%= render thumb %>
+    <% end %>
+  </div>
+  </section>
 
 
   <div id="articles">

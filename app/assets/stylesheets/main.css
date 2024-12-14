@@ -16,6 +16,15 @@
     justify-items: center;
 }
 
+.image-box-thumb {
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    justify-items: center;
+}
+
 .caption {
     justify-self: center;
     color: rgb(137, 137, 137);

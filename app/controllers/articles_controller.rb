@@ -25,6 +25,10 @@ class ArticlesController < ApplicationController
   def edit
   end
 
+  def showThumbs
+    render thumbs
+  end
+
   # POST /articles or /articles.json
   def create
     @article = Article.new(article_params)
