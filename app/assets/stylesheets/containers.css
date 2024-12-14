@@ -1,9 +1,21 @@
 .vertical {
     width: min-content;
+    width: 600px;
 }
 
 .categories-section {
+    margin: 25px;
     background-color: white;
-    .
+    .category-heading {
+        text-align: center;
+        background-color: #de983f;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        width: 100%;
+    }
 }
 
+.main-section {
+    margin: 25px;
+    background-color: white;
+}
