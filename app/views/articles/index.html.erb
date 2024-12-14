@@ -10,9 +10,9 @@
   </div>
   <section class="left">
     <div id="articles">
-    <% @articles.each do |thumb| %>
-      <%= render thumb %>
-    <% end %>
+      <% @articles.each do |article| %>
+        <%= render "thumb" %>
+      <% end %>
   </div>
   </section>
 

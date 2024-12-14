@@ -25,6 +25,10 @@
     justify-items: center;
 }
 
+.left {
+    justify-self: left;
+}
+
 .caption {
     justify-self: center;
     color: rgb(137, 137, 137);

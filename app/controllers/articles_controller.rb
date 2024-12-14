@@ -14,6 +14,9 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1 or /articles/1.json
   def show
+    @product = Product.find(params[:id])
+
+    
   end
 
   # GET /articles/new
@@ -26,7 +29,8 @@ class ArticlesController < ApplicationController
   end
 
   def showThumbs
-    render thumbs
+
+    render thumb
   end
 
   # POST /articles or /articles.json
