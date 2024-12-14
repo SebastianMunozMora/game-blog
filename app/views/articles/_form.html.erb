@@ -29,6 +29,8 @@
 
   <%= form.select :author_id, options_from_collection_for_select(Author.all, :id, :name) %>
 
+  <%= form.select :category_id, options_from_collection_for_select(Category.all, :id, :name) %>
+
   <div>
     <%= form.submit %>
   </div>

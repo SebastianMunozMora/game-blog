@@ -7,5 +7,6 @@ class MainPageController < ApplicationController
       "Instagram" => "https://www.instagram.com/semm93/",
     }
     @authors = Author.all
+    @categories = Category.all
   end
 end

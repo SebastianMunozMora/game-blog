@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+#Category.create!([{ name: "video games" }, { name: "movies" }, { name: "comics" }, { name: "books" }, { name: "entertainment" }, { name: "tech" }, { name: "science" }])
+#
+#
+
+# categoryToEdit = Category.find(1)
+
+# categoryToEdit.name = "video games"
+
+# categoryToEdit.save
+
+#Category.create!([{ name: "lifestyle" }])

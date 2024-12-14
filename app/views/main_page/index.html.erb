@@ -12,13 +12,20 @@
 
     <div class="vertical">
       <% @articles.each do |article| %>
-        <%= render partial: "thumb", locals: { article: article } %>
+        <%= render partial: "full", locals: { article: article } %>
       <% end %>
     </div>
 
-    <div class="">
-      <% @articles.each do |article| %>
-        <%= render partial: "full", locals: { article: article } %>
+    <div class="categories-section">
+      <% @categories.each do |category| %>
+        <div class="category-heading">
+          <%= category.name %>
+        </div>
+        <div class="vertical">
+          <% category.articles.each do |article| %>
+            <%= render partial: "thumb", locals: { article: article } %>
+          <% end %>
+        </div>
       <% end %>
     </div>
 

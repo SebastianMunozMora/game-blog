@@ -7,6 +7,10 @@
     <div class="article-heading">
         <%= link_to "#{article.title}", article %>
     </div>
+
+    <div class="category">
+        <%= link_to article.category.name %>
+    </div>
     <div class="author-box">
         <i class="fa-house"></i>
         <%= link_to "#{article.author.name}", article.author %>
