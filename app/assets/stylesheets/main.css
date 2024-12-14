@@ -2,49 +2,24 @@
  *= require font-awesome
  */
 
-.author-box {
-    font-weight: bold;
-    padding: 15px;
-    justify-self: right;
-}
-
-.image-box {
-    border: 1px solid grey;
-    padding: 5px;
-    background-color: white;
-    width: 500px;
-    justify-items: center;
-}
-
-.image-box-thumb {
-    border: 1px solid grey;
-    padding: 5px;
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    justify-items: center;
+/* page wide styles */
+a {
+    text-decoration: none;
+    color: inherit
 }
 
 .left {
-    justify-self: left;
-}
-
-.caption {
-    justify-self: center;
-    color: rgb(137, 137, 137);
+    max-height: 500px;
+    width: 30%;
+    overflow-y: scroll;
+    margin: 15px;
     display: inline-block;
+    border-right: solid 2px black;
 }
 
-.author {
-    width: 150px;
-    height: 150px;
-}
-
-.top-image {
+.main {
+    width: 30%;
     display: block;
-    object-fit: cover;
-    width: 500px;
-    height: 300px;
 }
 
 .top-banner {
@@ -58,7 +33,6 @@
     background: rgb(36,27,0);
     background: linear-gradient(90deg, rgba(36,27,0,1) 0%, rgba(222,152,63,1) 22%, rgba(234,251,255,1) 91%);
     width: 100%;
-    justify-items: center;
     padding: 15px;
 }
 
@@ -68,37 +42,6 @@
     background-position: -19px -19px;
 }
 
-[id*="article_"] {
-    background-color: rgb(241, 233, 210);
-    padding: 15px;
-    width: 525px;
-    justify-items: center;
-    margin: 15px;
-}
-
-#articles {
+.page-articles {
     display: inline-flex;
-    overflow-y: scroll;
-    width: 700px;
-    background-color: white;
-}
-
-.article-heading {
-    justify-self: center;
-    font-weight: bold;
-    font-size: larger;
-    margin: 15px;
-    width: 500px;
-    a {
-        text-decoration: none;
-        color: inherit
-    }
-}
-
-.article-body {
-    text-align: justify;
-    padding: 15px;
-    overflow: hidden;
-    max-height: 100px;
-    overflow-y: scroll;
 }

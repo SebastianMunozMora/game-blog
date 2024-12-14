@@ -1,0 +1,24 @@
+.thumb {
+    vertical-align: top;
+    justify-items: left;
+    display: inline-flex;
+
+    .image-box {
+        flex-basis: fit-content;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .article-heading {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .text-box {
+        margin: 5px;
+        margin-left: 15px;
+        inline-size: fit-content;
+    }
+}

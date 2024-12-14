@@ -1,0 +1,15 @@
+<div id="<%= dom_id article %>" class="thumb">
+  <div class="image-box">
+    <%= image_tag(article.image, :class => "top-image") %>
+  </div>
+
+  <div class="text-box">
+    <div class="article-heading">
+        <%= link_to "#{article.title}", article %>
+    </div>
+
+    <div class="author-box">
+        <%= link_to "#{article.author.name}", article.author %>
+    </div>
+  </div>
+</div>

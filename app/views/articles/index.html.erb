@@ -1,25 +1,35 @@
+
 <p style="color: green"><%= notice %></p>
 
 <div style="justify-items: center;" class="page">
 
-  <div class="top-banner">
+  <section class="top-banner">
     <h1>The Tech Chronicle</h1>
         <% @networks.each do |key, value| %>
           <%= link_to "#{key}", value %>
         <% end %>
-  </div>
+  </section>
+
   <section class="left">
     <div id="articles">
       <% @articles.each do |article| %>
-        <%= render "thumb" %>
+        <%= render article %>
       <% end %>
-  </div>
+    </div>
+  </section>
+  <section class="main">
+    <div id="articles">
+      <% @articles.each do |article| %>
+        <%= render article  %>
+      <% end %>
+    </div>
   </section>
 
-
-  <div id="articles">
-    <% @articles.each do |article| %>
-      <%= render article  %>
-    <% end %>
-  </div>
+  <section class="right">
+    <div id="articles">
+      <% @articles.each do |article| %> 
+        <%= render article %>
+      <% end %>
+    </div>
+  </section>
 </div>
