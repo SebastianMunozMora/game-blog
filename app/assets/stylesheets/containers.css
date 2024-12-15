@@ -4,6 +4,7 @@
 }
 
 .categories-section {
+    overflow: scroll;
     margin: 25px;
     background-color: white;
     .category-heading {
@@ -18,6 +19,9 @@
 .main-section {
     margin: 25px;
     background-color: white;
-    height: 1000px;
     overflow: scroll;
+}
+
+.page-articles {
+    height: 1000px;
 }

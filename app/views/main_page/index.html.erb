@@ -3,13 +3,9 @@
   <section class="top-banner">
 
     <h1>The Tech Chronicle</h1>
-      <% @networks.each do |key, value| %>
-        <%= link_to "#{key}", value %>
-      <% end %>
   </section>
 
   <div class="page-articles">
-
     <div class="main-section">
       <div class="vertical">
         <% @articles.each do |article| %>
@@ -30,6 +26,11 @@
         </div>
       <% end %>
     </div>
-
   </div>
+
+  <footer>
+    <% @networks.each do |key, value| %>
+        <%= link_to "#{key}", value %>
+      <% end %>
+  </footer>
 </div>
