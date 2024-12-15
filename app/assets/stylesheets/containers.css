@@ -8,11 +8,14 @@
     margin: 25px;
     background-color: white;
     .category-heading {
+        text-shadow: 0 0 3px #0000FF;
         text-align: center;
         background-color: #de983f;
         text-transform: capitalize;
         font-size: 1.5rem;
         width: 100%;
+        border-bottom-right-radius: 20px;
+
     }
 }
 

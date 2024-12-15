@@ -8,12 +8,14 @@
         <%= link_to "#{article.title}", article %>
     </div>
 
-    <div class="category">
-      <%= article.category.name %>
-    </div>
+    <% if category %>
+      <div class="category">
+        <%= article.category.name %>
+      </div>
+    <% end %>
 
     <div class="author-box">
-        <i class="fab fa-facebook"></i><%= link_to "#{article.author.name}", article.author %>
+        by: <%= link_to "#{article.author.name}", article.author %>
     </div>
   </div>
 </article>
