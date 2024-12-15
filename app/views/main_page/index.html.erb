@@ -10,10 +10,12 @@
 
   <div class="page-articles">
 
-    <div class="vertical">
-      <% @articles.each do |article| %>
-        <%= render partial: "full", locals: { article: article } %>
-      <% end %>
+    <div class="main-section">
+      <div class="vertical">
+        <% @articles.each do |article| %>
+          <%= render partial: "full", locals: { article: article } %>
+        <% end %>
+      </div>
     </div>
 
     <div class="categories-section">
