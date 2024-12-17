@@ -3,6 +3,8 @@
     <%= image_tag(article.image, :class => "top-image") %>
   </div>
 
+  <%= article.created_at.strftime("%d/%m/%y") %>
+
   <div class="text-box">
     <div class="article-heading">
         <%= link_to "#{article.title}", article %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'morse_interpreter/index'
   get 'test/index'
   get 'test/thumb'
   get 'test/full'

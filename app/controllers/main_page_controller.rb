@@ -9,4 +9,8 @@ class MainPageController < ApplicationController
     @authors = Author.all
     @categories = Category.all
   end
+
+  def formatDate(date)
+    strftime(date, "%Y-%m-%d")
+  end
 end

@@ -8,6 +8,10 @@
         <%= link_to "#{article.title}", article %>
     </div>
 
+    <%= article.created_at.strftime("%d/%m/%y") %>
+
+    <%= button_to "Click me", "/home/handle_click", method: :post %>
+
     <div class="category">
         <%= link_to article.category.name %>
     </div>
