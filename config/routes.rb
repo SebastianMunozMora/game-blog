@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'date/index'
+  get 'date/latest'
+  get 'date/oldest'
+  get 'date/current-date'
   get 'category/index'
   get 'category/video-games'
   get 'category/movies'

@@ -11,9 +11,9 @@
 #
 #Category.create!([{ name: "lifestyle" }])
 
-categoryToEdit = Category.find(1)
+#categoryToEdit = Category.find(1)
 
-categoryToEdit.name = "video-games"
+#categoryToEdit.name = "video-games"
 
-categoryToEdit.save
+#categoryToEdit.save
 

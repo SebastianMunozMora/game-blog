@@ -9,7 +9,7 @@
     <div class="main-section">
       <div class="vertical">
         <% @articles.each do |article| %>
-          <%= render partial: "full", locals: { article: article } %>
+          <%= render partial: "common/full", locals: { article: article } %>
         <% end %>
       </div>
     </div>
@@ -22,7 +22,7 @@
           </div>
           <div class="vertical">
             <% category.articles.each do |article| %>
-              <%= render partial: "thumb", locals: { article: article, category: false } %>
+              <%= render partial: "common/thumb", locals: { article: article, category: false } %>
             <% end %>
           </div>
         <% end %>
