@@ -11,7 +11,7 @@ class CategoryController < ApplicationController
   end
 
   def video_games
-    @category = Category.find_by(name: "video games")
+    @category = Category.find_by(name: "video-games")
     @articles = @category.articles
   end
   
