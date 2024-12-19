@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'date/latest'
   get 'date/oldest'
   get 'date/current-date'
+  get 'date/', to: 'date#index', as: 'date'
   get 'category/index'
   get 'category/video-games'
   get 'category/movies'
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   get 'category/entertainment'
   get 'category/science'
   get 'category/lifestyle'
+  get 'category/', to: 'category#index', as: 'category'
   get 'custom_article/index'
   get 'morse_interpreter/index'
   get 'test/index'
@@ -25,4 +27,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "main_page#index"
+
 end

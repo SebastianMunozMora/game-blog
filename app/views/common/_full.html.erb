@@ -15,7 +15,7 @@
         </div>
         -
         <div class="date-field">
-            <%= link_to "#{article.created_at.strftime("%d/%m/%y")}", "date/current-date?current=#{article.created_at.to_date}" %>
+            <%= link_to "#{article.created_at.strftime("%d/%m/%y")}", "date/?current=#{article.created_at.to_date}" %>
         </div>
     </div>
 
