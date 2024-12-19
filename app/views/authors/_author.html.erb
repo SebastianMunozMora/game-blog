@@ -1,35 +1,30 @@
-<div id="<%= dom_id author %>">
-  <p>
-    <strong>Name:</strong>
-    <%= author.name %>
-  </p>
+<div id="<%= dom_id author %>" class="author-container">
+  <div class="">
+    <p class="author-name">
+      <%= author.name %>
+    </p>
 
-  <p>
-    <%= image_tag(author.avatar, :style=>"width:150px; height: 150px") if author.avatar  %>
-  </p>
+    <p>
+      <%= image_tag(author.avatar, :style=>"width:150px; height: 150px") if author.avatar  %>
+    </p>
 
-  <p>
-    <strong>Contact:</strong>
-    <%= author.contact %>
-  </p>
+    <p class="author-contact-info">
+      <%= author.contact %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= author.description %>
-  </p>
+    <p class="author-description">
+      <%= author.description %>
+    </p>
 
-  <p style="color: green"><%= notice %></p>
+    <p style="color: green"><%= notice %></p>
 
-  <h2><%= author.name %>'s Articles</h2>
+  </div>
 
-  <!--<div id="articles">
-    <% Article.by_author_id(author.id).each do |article| %>
-      <%= render article %>
-      <p>
-        <%= link_to "Show this article", article %>
-      </p>
-    <% end %>
-  </div>-->
+  <div id="articles" class="author-articles">
+      <h2><%= author.name %>'s Articles</h2>
+      <% @articles = Article.by_author_id(author.id) %>
+      <%= render "common/article-list" %>
+    </div>
 
   <%= link_to "New article", new_article_path %>
 
