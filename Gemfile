@@ -76,4 +76,3 @@ gem "font-awesome-rails", "~> 4.7"
 
 gem "tailwindcss-rails", "~> 3.0"
 
-

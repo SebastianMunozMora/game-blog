@@ -8,13 +8,17 @@
         <%= link_to "#{article.title}", article %>
     </div>
 
-    <%= article.created_at.strftime("%d/%m/%y") %>
-
-    <%= button_to "Click me", "/home/handle_click", method: :post %>
-
-    <div class="category">
-        <%= link_to article.category.name %>
+    <div class="date-category-box">
+        <div class="category <%= "category-#{article.category.name}" %>">
+            <div class="arrow-right"></div>
+            <%= link_to article.category.name %>
+        </div>
+        -
+        <div class="date-field">
+            <%= article.created_at.strftime("%d/%m/%y") %>
+        </div>
     </div>
+
     <div class="author-box">
         <i class="fa-house"></i>
         <%= link_to "#{article.author.name}", article.author %>

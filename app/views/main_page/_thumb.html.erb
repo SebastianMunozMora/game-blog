@@ -3,21 +3,30 @@
     <%= image_tag(article.image, :class => "top-image") %>
   </div>
 
-  <%= article.created_at.strftime("%d/%m/%y") %>
-
   <div class="text-box">
     <div class="article-heading">
         <%= link_to "#{article.title}", article %>
     </div>
+
+    <div class="date-author-field">
+
+
+    </div>
+
+    <div class="date-author-field">
+      <div class="date-field">
+        <%= article.created_at.strftime("%d/%m/%y") %>-
+      </div>
+      <div class="author-box">
+        <%= link_to "#{article.author.name}", article.author %>
+      </div>
+    </div>
+
 
     <% if category %>
       <div class="category">
         <%= article.category.name %>
       </div>
     <% end %>
-
-    <div class="author-box">
-        by: <%= link_to "#{article.author.name}", article.author %>
-    </div>
   </div>
 </article>

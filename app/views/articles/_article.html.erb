@@ -1,19 +1,22 @@
-<div id="<%= dom_id article %>">
-  <div class="image-box">
-    <%= image_tag(article.image, :class => "top-image") %>
-    <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
-  </div>
+<% if false %>
+  <div id="<%= dom_id article %>">
+    <div class="image-box">
+      <%= image_tag(article.image, :class => "top-image") %>
+      <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
+    </div>
 
-  <div class="article-heading">
-    <%= link_to "#{article.title}", article %>
-  </div>
+    <div class="article-heading">
+      <%= link_to "#{article.title}", article %>
+    </div>
 
-  <div class="author-box">
-    <%= link_to "#{article.author.name}", article.author %>
-  </div>
+    <div class="author-box">
+      <%= link_to "#{article.author.name}", article.author %>
+    </div>
 
-  <div class="article-body">
-    <%= article.body %>
+    <div class="article-body">
+      <%= article.body %>
+    </div>
   </div>
-</div>
+<% end %>
 
+<%= render partial: "ff-article", locals: { article: article } %>

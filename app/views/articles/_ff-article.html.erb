@@ -1,0 +1,20 @@
+<script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
+
+<div id="<%= dom_id article %>" class="ff-article">
+    <div class="image-box">
+        <%= image_tag(article.image, :class => "top-image") %>
+        <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
+    </div>
+
+    <div class="article-heading">
+        <%= link_to "#{article.title}", article %>
+    </div>
+
+    <div class="author-box">
+        <%= link_to "#{article.author.name}", article.author %>
+    </div>
+
+    <div class="article-body">
+        <%= article.body.html_safe %>
+    </div>
+</div>

@@ -1,16 +1,16 @@
 .thumb {
-    width: 94%;
+    width: 80%;
     vertical-align: top;
     justify-items: left;
     display: inline-flex;
     border-radius: 5px;
-    border-bottom-right-radius: 100px;
-    border-bottom: 10px solid coral;
+    border-bottom-right-radius: 50px;
+    border-bottom: 5px solid coral;
     .image-box {
         flex-basis: fit-content;
         img {
-            max-width: 150px;
-            max-height: 150px;
+            max-width: 100px;
+            max-height: 100px;
         }
     }
 
@@ -23,5 +23,14 @@
         margin: 5px;
         margin-left: 15px;
         inline-size: fit-content;
+    }
+
+    .date-author-field {
+        display: inline-flex;
+        font-size: 15px;
+    }
+
+    .author-box {
+        padding: 5px;
     }
 }

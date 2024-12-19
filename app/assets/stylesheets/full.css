@@ -4,6 +4,64 @@
     }
 
     .author-box {
-
+        margin-top: -40px;
     }
+
+    .date-category-box {
+        margin-left: 15px;
+        justify-self: left;
+        .date-field {
+            display: inline-block;
+        }
+
+        .category {
+            display: inline-block;
+        }
+    }
+
+    .article-body {
+        font-size: 15px;
+    }
+
+    .arrow-right {
+        display: inline-block;
+        width: 0; 
+        height: 0; 
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        
+        border-left: 10px solid;
+    }
+}
+
+.full .article-body {
+    max-height: 100px;
+}
+
+.category-lifestyle {
+    color: green;
+}
+
+.category-tech {
+    color: darkblue
+}
+
+.category-video {
+    color: darkgoldenrod
+}
+
+.category-books {
+    color: brown;
+}
+
+.category-comics {
+    color: darkred;
+}
+
+.category-entertainment {
+    color: darkmagenta
+}
+
+.category-movies {
+    color: darkcyan
 }

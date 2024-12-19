@@ -27,6 +27,7 @@
     justify-items: center;
     margin: 15px;
     max-width: 100%;
+    text-transform: capitalize;
 }
 
 .article-heading {
@@ -38,6 +39,7 @@
 }
 
 .article-body {
+    max-width: 100% !important;
     text-align: justify;
     padding: 15px;
     overflow: hidden;
@@ -62,3 +64,12 @@
     width: 500px;
     height: 300px;
 }
+
+a{
+    font-weight: bold;
+}
+
+.date-field {
+    padding: 5px;
+}
+

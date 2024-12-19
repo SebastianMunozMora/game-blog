@@ -8,14 +8,41 @@
     margin: 25px;
     background-color: white;
     .category-heading {
-        text-shadow: 0 0 3px #0000FF;
+        color: white;
+        text-shadow: 0 0 3px #f1e775;
         text-align: center;
         background-color: #de983f;
         text-transform: capitalize;
         font-size: 1.5rem;
         width: 100%;
         border-bottom-right-radius: 20px;
-
+    }
+    .category-heading-lifestyle {
+        background-color: green;
+    }
+    
+    .category-heading-tech {
+        background-color: darkblue
+    }
+    
+    .category-heading-video {
+        background-color: darkgoldenrod
+    }
+    
+    .category-heading-books {
+        background-color: brown;
+    }
+    
+    .category-heading-comics {
+        background-color: darkred;
+    }
+    
+    .category-heading-entertainment {
+        background-color: darkmagenta
+    }
+    
+    .category-heading-movies {
+        background-color: darkcyan
     }
 }
 
