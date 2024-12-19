@@ -1,5 +1,5 @@
 <div id="<%= dom_id author %>" class="author-container">
-  <div class="">
+  <div class="author-info">
     <p class="author-name">
       <%= author.name %>
     </p>
@@ -16,8 +16,7 @@
       <%= author.description %>
     </p>
 
-    <p style="color: green"><%= notice %></p>
-
+    <p style="color: green"><%= notice %></p>    
   </div>
 
   <div id="articles" class="author-articles">
@@ -26,6 +25,5 @@
       <%= render "common/article-list" %>
     </div>
 
-  <%= link_to "New article", new_article_path %>
 
 </div>

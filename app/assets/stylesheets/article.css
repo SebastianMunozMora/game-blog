@@ -45,6 +45,7 @@
     overflow: hidden;
     max-height: 100px;
     overflow-y: scroll;
+    text-transform: none;
 }
 
 .caption {

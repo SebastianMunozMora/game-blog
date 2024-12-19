@@ -11,11 +11,11 @@
     <div class="date-category-box">
         <div class="category <%= "category-#{article.category.name}" %>">
             <div class="arrow-right"></div>
-            <%= link_to article.category.name %>
+            <%= link_to "#{article.category.name}", "/category/#{article.category.name}" %>
         </div>
         -
         <div class="date-field">
-            <%= link_to "#{article.created_at.strftime("%d/%m/%y")}", "date/?current=#{article.created_at.to_date}" %>
+            <%= link_to "#{article.created_at.strftime("%d/%m/%y")}", "/date/?current=#{article.created_at.to_date}" %>
         </div>
     </div>
 

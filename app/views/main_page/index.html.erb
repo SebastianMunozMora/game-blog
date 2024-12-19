@@ -8,9 +8,7 @@
   <div class="page-articles">
     <div class="main-section">
       <div class="vertical">
-        <% @articles.each do |article| %>
-          <%= render partial: "common/full", locals: { article: article } %>
-        <% end %>
+        <%= render "common/article-list" %>
       </div>
     </div>
 

@@ -4,6 +4,10 @@
 }
 
 .categories-section {
+    justify-self: center;
+}
+
+.categories-section {
     overflow: scroll;
     margin: 25px;
     background-color: white;
@@ -62,4 +66,8 @@
 
 .author-container {
     display: inline-flex;
+}
+
+.author-info {
+    width: 33%;
 }
