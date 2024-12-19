@@ -1,0 +1,16 @@
+<div>
+  <div class="categories-section">
+    <div class="category-">
+      <% @categories.each do |category| %>
+        <div class="<%= "category-heading category-heading-#{category.name}" %>">
+          <%= category.name %>
+        </div>
+          <div class="vertical">
+            <% category.articles.each do |article| %>
+              <%= render partial: "thumb", locals: { article: article, category: false } %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

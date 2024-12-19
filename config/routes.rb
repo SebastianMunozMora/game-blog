@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'category/index'
+  get 'category/video-games'
+  get 'category/movies'
+  get 'category/comics'
+  get 'category/books'
+  get 'category/tech'
+  get 'category/entertainment'
+  get 'category/science'
+  get 'category/lifestyle'
   get 'custom_article/index'
   get 'morse_interpreter/index'
   get 'test/index'

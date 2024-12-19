@@ -1,0 +1,11 @@
+<div class="categories-section">
+	<div class="<%= "category-heading category-heading-#{@category.name}" %>">
+		<%= @category.name %>
+	</div>
+
+	<div class="vertical">
+		<% @articles.each do |article| %>
+			<%= render partial: "thumb", locals: { article: article, category: false } %>
+		<% end %>
+	</div>
+</div>
