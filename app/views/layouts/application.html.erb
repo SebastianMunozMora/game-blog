@@ -12,6 +12,7 @@
     <%= stylesheet_link_tag "article" %>
     <%= stylesheet_link_tag "ff-article" %>
     <%= stylesheet_link_tag "thumb" %>
+    <%= stylesheet_link_tag "category-tab" %>
     <%= stylesheet_link_tag "full" %>
     <%= javascript_importmap_tags %>
     <%= favicon_link_tag asset_path('game-controller.png') %>
@@ -20,9 +21,10 @@
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
       <section class="top-banner">
-        <h1></h1>
-        <%= link_to "The Tech Chronicle", "/" %>
-        <%= render partial: "layouts/category-tab", locals: { @categories = Category.all } %>
+        <h1>
+          <%= link_to "The Tech Chronicle", "/" %>
+        </h1>
+        <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
       </section>
       <%= yield %>
       <footer>

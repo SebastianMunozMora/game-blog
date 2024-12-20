@@ -1,0 +1,9 @@
+.category-tab {
+    margin: 10px;
+    background-color:sienna;
+    .category {
+        text-transform: capitalize;
+        display: inline;
+        padding: 5px;
+    }
+}
