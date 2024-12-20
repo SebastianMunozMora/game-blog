@@ -6,4 +6,8 @@ class Article < ApplicationRecord
 
     scope :by_author_id, -> (author) { where(author: author) }
     scope :by_category_id, -> (category) { where(category: category) }
+    scope :search, -> (term) {
+        where("title LIKE ? OR body LIKE ?", 
+            "%#{term}%", "%#{term}%") 
+        }
 end

@@ -20,15 +20,10 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
-      <section class="top-banner">
-        <h1>
-          <%= link_to "The Tech Chronicle", "/" %>
-        </h1>
-        <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
-      </section>
+      <%= render "layouts/top-banner"%>
       <%= yield %>
       <footer>
-        
+        hello footer
       </footer>
     </main>
   </body>

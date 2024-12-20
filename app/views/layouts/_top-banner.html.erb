@@ -1,0 +1,7 @@
+<section class="top-banner">
+  <h1>
+    <%= link_to "The Tech Chronicle", "/" %>
+  </h1>
+  <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
+  <input hint="search: ">
+</section>
