@@ -2,6 +2,7 @@
     margin: 10px;
     background-color:sienna;
     .category {
+        font-size: 30px;
         text-transform: capitalize;
         display: inline;
         padding: 5px;
