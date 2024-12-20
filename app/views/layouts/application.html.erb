@@ -14,6 +14,7 @@
     <%= stylesheet_link_tag "thumb" %>
     <%= stylesheet_link_tag "full" %>
     <%= javascript_importmap_tags %>
+    <%= favicon_link_tag asset_path('game-controller.png') %>
   </head>
 
   <body>
@@ -21,6 +22,7 @@
       <section class="top-banner">
         <h1></h1>
         <%= link_to "The Tech Chronicle", "/" %>
+        <%= render partial: "layouts/category-tab", locals: { @categories = Category.all } %>
       </section>
       <%= yield %>
       <footer>
