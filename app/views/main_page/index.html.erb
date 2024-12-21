@@ -3,12 +3,14 @@
 
   <div class="page-articles">
     <div class="main-section">
+      <%= render partial: "layouts/page-heading", locals: { heading: "Featured Articles" }%>
       <div class="vertical">
-        <%= render "common/article-list" %>
+        <%= render partial: "common/article-partial-list", locals: { articles: @articles } %>
       </div>
     </div>
 
     <div class="categories-section">
+      <%= render partial: "layouts/page-heading", locals: { heading: "Categories" }%>
       <div class="category-">
         <% @categories.each do |category| %>
           <div class="<%= "category-heading category-heading-#{category.name}" %>">
@@ -22,8 +24,9 @@
         <% end %>
       </div>
     </div>
-    <section class="search-section">
-      
-    </section>
+    <div class="search-section">
+      <%= render partial: "layouts/page-heading", locals: { heading: "Results" }%>
+      <%= render partial: "common/article-partial-list", locals: { articles: @articleSearch } if @articleSearch %>
+    </div>
   </div>
 </div>

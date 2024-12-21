@@ -1,0 +1,8 @@
+<div class="categories-section category-list-view">
+
+	<div class="vertical">
+		<% articles.each do |article| %>
+			<%= render partial: "common/full", locals: { article: article, category: false } %>
+		<% end %>
+	</div>
+</div>

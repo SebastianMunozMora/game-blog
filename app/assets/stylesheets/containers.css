@@ -79,3 +79,14 @@
 .author-info {
     width: 33%;
 }
+
+.search-section {
+    height: 50%;
+    .categories-section.category-list-view {
+        height: 100%;
+    }
+}
+
+.page-articles {
+    width: 100%;
+}

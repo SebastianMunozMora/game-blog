@@ -10,7 +10,7 @@ class MainPageController < ApplicationController
     @authors = Author.all
     @categories = Category.all
 
-    @articleSearch = @articles.search(@term)
+    @articleSearch = @term ? @articles.search(@term) : nil
 
   end
 

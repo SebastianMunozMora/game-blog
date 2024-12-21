@@ -3,5 +3,9 @@
     <%= link_to "The Tech Chronicle", "/" %>
   </h1>
   <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
-  <input hint="search: ">
+  <%= form_tag("/", method: :get) do %>
+    <%= label_tag(:q, "Search:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+  <% end %>
 </section>
