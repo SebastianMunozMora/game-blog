@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'test/thumb'
   get 'test/full'
   get 'main_page/index'
+  get 'morse_interpreter/', to: 'morse_interpreter#index', as: 'morse_interpreter'
   resources :articles
   resources :authors
   resources :categories
