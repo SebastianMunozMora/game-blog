@@ -10,7 +10,24 @@ class MainPageController < ApplicationController
     @authors = Author.all
     @categories = Category.all
 
-    @articleSearch = @term ? @articles.search(@term) : nil
+    
+    if @term
+      @authorSearch = @term ? @authors.search(@term) : nil
+      @categorySearch = @term ? @categories.search(@term) : nil
+  
+      @articleSearch = []
+  
+      @authorSearch.each do |i|
+        @articleSearch.concat(@articles.by_author_id(i))
+      end
+
+      @categorySearch.each do |i|
+        @articleSearch.concat(@articles.by_category_id(i))
+      end 
+      
+      @articleSearch.concat(@articles.search(@term))
+    end
+
 
   end
 

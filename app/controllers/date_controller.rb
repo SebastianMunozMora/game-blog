@@ -5,7 +5,14 @@ class DateController < ApplicationController
     if params[:current]
       @currentDate = params[:current]
       @articles = Article.where("DATE(created_at) = ?", @currentDate)
+
+      @term = params[:q]
+      if @term
+        @articles = searchArticles(@term, @articles)
+      end
     end
+
+    
   end
 
   def current_date
@@ -24,5 +31,13 @@ class DateController < ApplicationController
 
   def oldest
     @articles = Article.all
+  end
+
+  private
+  def searchArticles(term, articles)
+    @term = term
+    @articles = articles
+
+    (@term && @articles.search(@term)) || @articles
   end
 end
