@@ -27,8 +27,6 @@
     <div class="search-section">
       <%= render partial: "layouts/page-heading", locals: { heading: "Results" }%>
       <%= render partial: "common/article-partial-list", locals: { articles: @articleSearch } if @articleSearch %>
-
-      <%= @authorSearch  %>
     </div>
   </div>
 </div>
