@@ -8,7 +8,6 @@
     border: 1px solid grey;
     padding: 5px;
     background-color: white;
-    width: 500px;
     justify-items: center;
 }
 
@@ -26,7 +25,7 @@
     padding: 15px;
     justify-items: center;
     margin: 15px;
-    max-width: 100%;
+    max-width: 80%;
     text-transform: capitalize;
 }
 
@@ -62,8 +61,7 @@
 .top-image {
     display: block;
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    max-width: 300px;
 }
 
 a{

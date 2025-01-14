@@ -3,11 +3,8 @@
     width: 600px;
 }
 
-.categories-section {
+.categories-section, .search-section {
     justify-self: center;
-}
-
-.categories-section {
     overflow: scroll;
     margin: 25px;
     background-color: white;
