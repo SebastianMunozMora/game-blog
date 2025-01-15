@@ -27,3 +27,13 @@
     </div>
   </div>
 </div>
+
+<div id="root"></div>
+<script>
+  import MyForm from '../components/MyForm'; 
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('root');
+    ReactDOM.render(<MyForm />, root);
+  });
+</script>
