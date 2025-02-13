@@ -92,6 +92,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.hosts = [
+    "0.0.0.0",
     "www.pixelwave.blog",
     "pixelwave.blog",     # Allow requests from example.com
     /.*\.pixelwave\.blog/ # Allow requests from subdomains like `www.example.com`
