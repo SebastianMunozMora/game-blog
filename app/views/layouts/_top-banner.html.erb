@@ -3,7 +3,7 @@
     <%= link_to "The Tech Chronicle", "/" %>
   </h1>
   <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
-  <%= form_tag("#{request.original_url}", method: :get) do %>
+  <%= form_tag(url_for(only_path: false), method: :get) do %>
     <%= text_field_tag(:q) %>
     <%= submit_tag("Search") %>
   <% end %>
