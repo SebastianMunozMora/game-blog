@@ -11,8 +11,6 @@ class DateController < ApplicationController
         @articles = searchArticles(@term, @articles)
       end
     end
-
-    
   end
 
   def current_date
