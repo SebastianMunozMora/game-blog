@@ -1,0 +1,9 @@
+
+Style/Encoding:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 150
+
+Style/StringLiterals:
+  Enabled: false
