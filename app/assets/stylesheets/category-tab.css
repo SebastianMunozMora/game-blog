@@ -1,8 +1,8 @@
 .category-tab {
-    margin: 10px;
-    background-color:sienna;
+    padding: 10px;
+    margin: 5px;
     .category {
-        font-size: 30px;
+        font-size: 1.7rem;
         text-transform: capitalize;
         display: inline;
         padding: 5px;

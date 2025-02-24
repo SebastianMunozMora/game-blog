@@ -10,7 +10,6 @@
     background-color: white;
     .category-heading {
         color: white;
-        text-shadow: 0 0 3px #f1e775;
         text-align: center;
         text-transform: capitalize;
         font-size: 1.5rem;
@@ -19,40 +18,53 @@
     }
 }
 
-.category-heading-lifestyle {
-    background-color: green;
+.categories-section .category {
+    color: black;
 }
 
-.category-heading-tech {
-    background-color: darkblue
+.category-tab .category {
+    border-right: 2px solid blue;
 }
 
-.category-heading-video {
-    background-color: darkgoldenrod
+[class*="category-heading"] {
+    color: black;
 }
 
-.category-heading-books {
-    background-color: brown;
+.category-heading-lifestyle:hover {
+
+    color: green;
 }
 
-.category-heading-comics {
-    background-color: darkred;
+.category-heading-tech:hover {
+    color: darkblue
 }
 
-.category-heading-entertainment {
-    background-color: darkmagenta
+.category-heading-video:hover {
+    color: darkgoldenrod
 }
 
-.category-heading-movies {
-    background-color: darkcyan
+.category-heading-books:hover {
+    color: brown;
 }
 
-.category-heading-video-games {
-    background-color: rgb(36, 81, 172)
+.category-heading-comics:hover {
+    color: darkred;
 }
 
-.category-heading-science {
-    background-color:steelblue
+.category-heading-entertainment:hover {
+    color: darkmagenta
+}
+
+.category-heading-movies:hover {
+    color: darkcyan
+}
+
+.category-heading-video-games:hover {
+    color: rgb(36, 81, 172)
+}
+
+.category-heading-science:hover {
+    color:steelblue
 }
 
 .main-section {

@@ -45,8 +45,6 @@ a {
     text-shadow: 0 0 3px #f1e775;
     justify-items: center;
     text-decoration-line: underline;
-    background: rgb(36,27,0);
-    background: linear-gradient(90deg, rgba(36,27,0,1) 0%, rgba(222,152,63,1) 22%, rgb(255, 255, 255) 91%);
     width: 100%;
     padding: 15px;
 }
