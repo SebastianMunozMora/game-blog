@@ -21,7 +21,6 @@
 }
 
 [id*="article_"] {
-    background-color: rgb(241, 233, 210);
     padding: 15px;
     justify-items: center;
     margin: 15px;

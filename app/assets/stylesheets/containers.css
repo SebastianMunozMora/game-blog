@@ -14,7 +14,6 @@
         text-transform: capitalize;
         font-size: 1.5rem;
         width: 100%;
-        border-bottom-right-radius: 20px;
     }
 }
 
@@ -31,40 +30,75 @@
 }
 
 .category-heading-lifestyle:hover {
-
     color: green;
+}
+
+.categories-section .category-heading-lifestyle {
+    border-bottom: 2px solid green;
 }
 
 .category-heading-tech:hover {
     color: darkblue
 }
 
+.categories-section .category-heading-tech {
+    border-bottom: 2px solid darkblue;
+}
+
 .category-heading-video:hover {
     color: darkgoldenrod
+}
+
+.categories-section .category-heading-video {
+    border-bottom: 2px solid darkgoldenrod;
 }
 
 .category-heading-books:hover {
     color: brown;
 }
 
+.categories-section .category-heading-books {
+    border-bottom: 2px solid brown;
+}
+
 .category-heading-comics:hover {
     color: darkred;
+}
+
+.categories-section .category-heading-comics {
+    border-bottom: 2px solid darkred;
 }
 
 .category-heading-entertainment:hover {
     color: darkmagenta
 }
 
+.categories-section .category-heading-entertainment {
+    border-bottom: 2px solid darkmagenta;
+}
+
 .category-heading-movies:hover {
     color: darkcyan
+}
+
+.categories-section .category-heading-movies {
+    border-bottom: 2px solid darkcyan;
 }
 
 .category-heading-video-games:hover {
     color: rgb(36, 81, 172)
 }
 
+.categories-section .category-heading-video-games {
+    border-bottom: 2px solid rgb(36, 81, 172);
+}
+
 .category-heading-science:hover {
-    color:steelblue
+    color: steelblue;
+}
+
+.categories-section .category-heading-science {
+    border-bottom: 2px solid steelblue;
 }
 
 .main-section {
