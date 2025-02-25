@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_12_14_204409) do
+ActiveRecord::Schema[7.2].define(version: 2025_02_17_154236) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -45,13 +45,23 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_14_204409) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "author_id"
+    t.integer "tags_id"
+    t.integer "category_id"
     t.index ["author_id"], name: "index_articles_on_author_id"
+    t.index ["category_id"], name: "index_articles_on_category_id"
+    t.index ["tags_id"], name: "index_articles_on_tags_id"
   end
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.string "contact"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "banners", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -68,7 +78,15 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_14_204409) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "articles", "authors"
+  add_foreign_key "articles", "categories"
+  add_foreign_key "articles", "tags", column: "tags_id"
 end
